@@ -6,7 +6,75 @@ body{
 	font-family: Proximanova, sans-serif;
 }
 
-.main-screen {
-	width:100%;
+.section {
+	position: relative;
+  	width: 100%;
+    height: 100vh;
+  	padding: 0 15px;
+}
+
+.main-screen{
+	width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+
+}
+
+.main-logo{
+	max-width:100%;
+}
+.main-logo img{
+	width: 80%;
+
+	padding-top:100px;
+}
+
+.second-screen{
+	width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+}
+
+.text-block {
+	width: 100%;
+	height: 33%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.text-block p{
+	font-size: 72px;
+	line-height: 100px;
+	font-weight: 400;
+}
+
+.social p{
+	font-size: 72px;
+	line-height: 100px;
+	font-weight: 400;
+}
+
+.number a{
+	font-size: 72px;
+	color: yellow;
+}
+
+.button-presentation {
+	background-color: #bf2b18;
+	width: 45%;
+    
+   
+    border-radius: 100px;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bf2b18;
+        cursor: pointer;
+
+}
+
+.button-presentation a{
+	font-size: 72px;
+	color: #fff;
+	 text-decoration: none;
 }
 
