@@ -1,8 +1,12 @@
 body{
-	background-color: black;
+	background: linear-gradient(
+135deg
+, #0b0d0f 0%,#020303 100%);
 	color: white;
 	width: 100%;
   	position: relative;
+  	line-height: 1.55em;
+  	letter-spacing: 0;
 	font-family: Proximanova, sans-serif;
 }
 
