@@ -50,7 +50,13 @@ body{
 
 .number a{
 	font-size: 72px;
-	color: yellow;
+	color: white;
+	line-height: 1.05em;
+	
+}
+.social a{
+color: white;
+line-height: 1.05em;
 }
 .button-presentation a{
 	font-size: 72px;
@@ -60,16 +66,15 @@ body{
 
 .button-presentation {
 	background-color: #bf2b18;
-	width: 45%;
-    
-   
+	width: 65%;
+
     border-radius: 100px;
     align-items: center;
     border-style: solid;
     border-width: 2px;
     border-color: #bf2b18;
-        cursor: pointer;
-
+    cursor: pointer;
+    text-align: center;
 }
 
 
