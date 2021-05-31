@@ -94,7 +94,7 @@ p{
 
 .text-block-b {
 	width: 100%;
-	
+	font-size: 60px;
 	margin-top: 75px;
 	margin-bottom: 75px;
 }
@@ -102,16 +102,19 @@ p{
 
 
 .social {
+
 	position: block
 	margin-top: 50px;
 }
 
 .social a{
+	font-size: 3rem !important;
 	color: #5a6472;
 	line-height: 1.05em;
-	text-decoration: none;
+	
 }
 .social p{
+	font-size: 3rem !important;
 	color: #5a6472 ;
 }
 
