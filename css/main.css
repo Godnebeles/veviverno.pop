@@ -249,14 +249,18 @@ li {
 
 .basiclist {
 	width: 100%;
-	 
+	
   }
 
  .basiclist.item span {
   	display: flex;
   	max-width: 70%;
   }
-
+ .list{
+ 
+ 	height: 100px;
+ 	margin-top: 75px; 
+ }
 
 nav a {
     margin: 10px 0 0 0;
