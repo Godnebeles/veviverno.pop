@@ -110,12 +110,7 @@ height: 95vh;
 }
 
 .button{
-	background: #bf2b18;
-	border-radius: 100px;
-   color: #fff;
-     padding:  40px 60px;
-   -webkit-tap-highlight-color:  transparent;
-    text-align: center;
+	
 }
 
 
@@ -126,12 +121,15 @@ height: 95vh;
 }
 
 .stroke {
+	
 	margin-top: 100px;
+
 }
 
 .stroke img {
-
+	position:fixed;
 	margin-left: 75%;
+	bottom: 200px;
 }
 
 .delimiter {
@@ -154,25 +152,26 @@ height: 95vh;
 .popup-body{
 	min-height: 100%;
 	display: flex;
-	
+	align-items: center;
 	justify-content: center;
 	padding: 30px 10px
 }
 
 .popup-content{
-	margin-top: -50px;
+	margin-top: -200px;
 	color: #000;
 	max-width: 90%;
-	padding: 20px;
+	
 }
 .popup-content a{
-	display:block;
+	display: inline-block;
 }
 .popup-content p{
 	font-size: 45px !important;
 	text-align: center;
 }
 .textfield {
+	padding: 10px 32px;
 	margin-top: 50px;
 	position: relative;
 	border: 3px solid #5a6472;
@@ -183,7 +182,7 @@ height: 95vh;
 }
 
 .w-input{
-	width: 100%;
+	width: 70%;
 	height: 130px;
 	vertical-align: middle;
 }
