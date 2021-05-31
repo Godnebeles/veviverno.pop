@@ -21,7 +21,7 @@ p{
     color: #fff;
     
 }
-@media screen and (min-width: 1600px){
+@media screen and (max-width: 1200px){
 		p {
 	    font-size: 6rem !important;
 	}
@@ -42,7 +42,7 @@ height: 95vh;
 .main-screen{
 	width: 90%;
     
-  	padding: 0 35px;
+  	padding: 0 50px;
 	justify-content: space-between;
 }
 
@@ -186,7 +186,7 @@ ul {
 li {
 	 width:100%;
 	position: relative;
-	font-size: 55px;
+	font-size: 70px;
 	justify-content: space-between;
 	font-weight: 700;
 	color: white;
@@ -233,7 +233,9 @@ nav a ::-webkit-any-link{
 	    cursor: pointer
 }
 
-
+.nav-in a:active{
+	color: rgba(255, 56, 89, 0.8);
+}
 nav {
 	display: flex;
 	padding-right: 10px;
