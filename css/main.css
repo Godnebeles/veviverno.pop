@@ -188,10 +188,10 @@ p{
 	width: 126px;
 	height: 126px;
 	border-radius: 50%;
-	border: 0px solid #5a6472;
-	margin-top: 45px;
+	border: 3px solid #5a6472;
+	margin-top: 46px;
 	text-align: center;
-	line-height: 156px;
+	line-height: 126px;
 	font-size: 70px;
 	z-index: 2;
 }
@@ -216,6 +216,7 @@ p{
 }
 
 .w-input{
+	width: 100%;
 	z-index: 1;
 	height: 100px;
 	vertical-align: middle;
