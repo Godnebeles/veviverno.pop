@@ -14,6 +14,7 @@ body{
 	color: white;
 	width: 100%;
 	height: 100%;
+	margin: 0;
   	line-height: 1.55em;
   	letter-spacing: 0;
 	font-family:Proximanova, sans-serif;
@@ -128,13 +129,6 @@ p{
 	
 }
 
-
-
-.main-stroke img{
-	transform:rotateY(180deg);
-	margin-left: -7%;
-}
-
 .stroke {
 	
 	margin-top: 100px;
@@ -142,9 +136,10 @@ p{
 }
 
 .stroke img {
-	position:fixed;
-	margin-left: 75%;
-	bottom: 200px;
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	
 }
 
 .delimiter {
@@ -179,10 +174,11 @@ p{
 .popup-content a{
 	display: inline-block;
 }
-.popup-content p{
+.sposob-text{
 	font-size: 45px !important;
 	text-align: left;
 }
+
 .textfield {
 	padding: 10px 32px;
 	margin-top: 50px;
@@ -279,7 +275,7 @@ nav {
 	position: absolute;
 	bottom: 20px;
 	
-	width: 100%;
+	width: 85%;
 	height: auto;
 	
 }
