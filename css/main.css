@@ -6,11 +6,14 @@
   font-weight: normal; 
   font-style: normal; 
 }
+html{
+	height: 100%;
+}
 body{
 	background: linear-gradient(135deg, #0b0d0f 0%,#020303 100%);
 	color: white;
 	width: 100%;
-  	position: relative;
+	height: 100%;
   	line-height: 1.55em;
   	letter-spacing: 0;
 	font-family:Proximanova, sans-serif;
@@ -43,7 +46,7 @@ p{
 .section {
 
     max-width: 100%;
-  
+   	height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -54,7 +57,7 @@ p{
 
 .main-screen{
 	width: 90%;
-    
+   
   	padding: 50px;
 	justify-content: space-between;
 }
@@ -62,7 +65,7 @@ p{
 .main-logo{
  	position: absolute;
 	max-width:100%;
-	margin-top:75px;
+	
 	margin-bottom: 30px;
 	bottom: 0%;
 	right: 6%;
@@ -83,15 +86,16 @@ p{
 
 	width: 100%;
 	position: relative;
-	padding-top: 75px;
-	padding-bottom: 75px;
+
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .text-block-b {
 	width: 100%;
 	
-	padding-top: 75px;
-	padding-bottom: 75px;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 
@@ -272,7 +276,7 @@ nav {
 
 .nav {
 	display: block;
-	position: 
+	position: absolute;
 	bottom: 20px;
 	
 	width: 100%;
