@@ -1,3 +1,11 @@
+@font-face { 
+  font-family: 'Proximanova';                                   /* IE9 Compat Modes */ 
+  src: 
+       url('font/ProximaNova-Regular.ttf')  format('truetype');              /* Старые Safari, Android, iOS */ 
+
+  font-weight: normal; 
+  font-style: normal; 
+}
 body{
 	background: linear-gradient(
 135deg
@@ -7,7 +15,7 @@ body{
   	position: relative;
   	line-height: 1.55em;
   	letter-spacing: 0;
-	font-family: Proximanova, sans-serif;
+	font-family:Proximanova, sans-serif;
 }
 div {
 
@@ -15,7 +23,7 @@ div {
 }
 p{
 	font-size: 67px;
-	font-weight:700;
+	font-weight:800;
 	line-height: 1.05em;
 	margin: 0;
     color: #fff;
@@ -23,7 +31,7 @@ p{
 }
 @media screen and (max-width: 1200px){
 		p {
-	    font-size: 5.2rem !important;
+	    font-size: 5rem !important;
 	}
 }
 
@@ -74,22 +82,16 @@ height: 95vh;
 }
 
 
-
-.number a{
-	 font-size: 7rem !important;
-	font-weight: 700;
-	color: white;
-	line-height: 1.05em;
-	text-decoration: none;
-}
-
 .social {
 	margin-top: 50px;
 }
 
 .social a{
-	color: white;
+	color: #5a6472;
 	line-height: 1.05em;
+}
+.social p{
+	color: #5a6472 ;
 }
 
 .button-presentation{
@@ -135,11 +137,11 @@ height: 95vh;
 }
 
 .popup{
-	display: none;
+	
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.8);
+	
 	top: 0;
 	left: 0;
 }
@@ -180,14 +182,15 @@ input{
 
 ul {
 	list-style: none;
-
+	display: block;
+	margin-left: -45px;
 }
 
 li {
-	 width:100%;
+	
 	position: relative;
 	font-size: 70px;
-	justify-content: space-between;
+	
 	font-weight: 700;
 	color: white;
 
@@ -195,9 +198,9 @@ li {
 
 }
 .vmark {
-	top:-150px;
+	top:200px;
 	width: 80px;
-	height: 100px;
+	
 
 }
 
@@ -207,7 +210,7 @@ li {
   }
 
  .basiclist.item div {
-  	width:100%;
+  	
   }
 
 
