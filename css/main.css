@@ -37,6 +37,9 @@ p{
 		p {
 	    font-size: 5rem !important;
 	}
+	.text-block-b p{
+	font-size: 60px !important;
+}
 }
 
 .section {
@@ -54,7 +57,7 @@ p{
 .main-screen{
 	width: 90%;
     
-  	padding: 0 50px;
+  	padding: 50px;
 	justify-content: space-between;
 }
 
@@ -84,6 +87,14 @@ p{
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
+
+.text-block-b {
+	width: 100%;
+	
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
 
 
 .social {
@@ -197,24 +208,23 @@ ul {
 }
 
 li {
-	
+	display: flex;
 	position: relative;
-	font-size: 70px;
-	
+	font-size: 60px;
+	margin-top: 50px;
 	font-weight: 700;
 	color: white;
 
 	line-height: 1.05em;
 
 }
-li::before {
-	content: url(images/Vmark.svg);
-}
-.vmark {
-	top:200px;
-	width: 80px;
-	
 
+.vmark {
+	position: relative;
+	display: flex;
+	align-self: flex-start;
+	width: 80px;
+	margin-top: -10px;
 }
 
 .basiclist {
@@ -222,8 +232,9 @@ li::before {
 	 
   }
 
- .basiclist.item div {
-  	
+ .basiclist.item span {
+  	display: flex;
+  	max-width: 70%;
   }
 
 
