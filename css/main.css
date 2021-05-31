@@ -159,21 +159,42 @@ p{
 
 .popup-body{
 	min-height: 100%;
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
+	display: flex;
+	
 	padding: 30px 10px
 }
 
 .popup-content{
-	
+	width: 70%;
 	color: #000;
-	max-width: 90%;
+	
 	
 }
+
 .popup-content a{
 	display: inline-block;
+
 }
+
+.popup-buttons {
+	width: 20%;
+	margin-left: 10%;
+	
+}
+.w-button {
+	width: 156px;
+	height: 156px;
+	border-radius: 50%;
+	border: 3px solid #5a6472;
+	margin-top: 45px;
+	text-align: center;
+	line-height: 156px;
+	font-size: 70px;
+}
+.w-button:active {
+	background-color:#5a6472;
+}
+
 .sposob-text{
 	font-size: 45px !important;
 	text-align: left;
@@ -191,7 +212,7 @@ p{
 }
 
 .w-input{
-	width: 70%;
+	width: 100%;
 	height: 130px;
 	vertical-align: middle;
 }
