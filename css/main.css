@@ -27,7 +27,7 @@ h3{
 }
 p{
 	font-size: 67px;
-	font-weight:800;
+	font-weight:700;
 	line-height: 1.05em;
 	margin: 0;
     color: #fff;
@@ -59,6 +59,7 @@ height: 95vh;
 }
 
 .main-logo{
+
 	max-width:100%;
 	margin-top:75px;
 	margin-bottom: 30px;
@@ -153,7 +154,7 @@ height: 95vh;
 .popup-body{
 	min-height: 100%;
 	display: flex;
-	align-items: center;
+	
 	justify-content: center;
 	padding: 30px 10px
 }
@@ -231,9 +232,10 @@ nav a {
     letter-spacing: 0.5px;
     color: #5a6472;
     font-weight: 400;
-    font-size: 70px;
-    line-height: 1.55em;
-        font-style: normal;
+    font-size: 3.5rem;
+   line-height: 1.55em;
+    font-style: normal;
+   
 	text-decoration: none;	
 	    transition: 0.4s ease;
     background-color: transparent;
