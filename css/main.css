@@ -40,7 +40,7 @@ p{
 }
 
 .section {
-height: 95vh;
+
     max-width: 100%;
   
     overflow: hidden;
@@ -87,6 +87,7 @@ height: 95vh;
 
 
 .social {
+	position: block
 	margin-top: 50px;
 }
 
@@ -141,24 +142,22 @@ height: 95vh;
 
 .popup{
 	
-	position: fixed;
+	position: relative;
 	width: 100%;
-	height: 100%;
-	
 	top: 0;
 	left: 0;
 }
 
 .popup-body{
 	min-height: 100%;
-	display: flex;
+	display: inline-block;
 	align-items: center;
 	justify-content: center;
 	padding: 30px 10px
 }
 
 .popup-content{
-	margin-top: -200px;
+	
 	color: #000;
 	max-width: 90%;
 	
@@ -168,7 +167,7 @@ height: 95vh;
 }
 .popup-content p{
 	font-size: 45px !important;
-	text-align: center;
+	text-align: left;
 }
 .textfield {
 	padding: 10px 32px;
@@ -207,6 +206,9 @@ li {
 
 	line-height: 1.05em;
 
+}
+li::before {
+	content: url(images/Vmark.svg);
 }
 .vmark {
 	top:200px;
@@ -252,14 +254,15 @@ nav a ::-webkit-any-link{
 	color: rgba(255, 56, 89, 0.8);
 }
 nav {
-	display: flex;
+	
 	padding-right: 10px;
 	
 	flex-direction: column;
 }
 
 .nav {
-	position: absolute;
+	display: block;
+	position: 
 	bottom: 20px;
 	
 	width: 100%;
