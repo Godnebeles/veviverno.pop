@@ -45,7 +45,7 @@ p{
 
 .section {
    width: calc(100vw - 30px);
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 150px);
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -62,7 +62,7 @@ p{
 }
 
 .main-logo{
- 	/*position: absolute;*/
+ 	position: absolute;
     max-width: 100%;
     width: 160px;
     margin-bottom: 15px;
