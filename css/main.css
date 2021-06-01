@@ -27,7 +27,7 @@ div {
 }
 
 p{
-	font-size: 24px;
+	font-size: 26.5px;
 	font-weight:700;
 	line-height: 1.05em;
 	margin: 0;
@@ -36,10 +36,10 @@ p{
 }
 @media screen and (max-width: 1200px){
 		p {
-	    font-size: 24px !important;
+	    font-size: 26.5px !important;
 	}
 	.text-block-b p{
-	font-size: 24px !important;
+	font-size: 20px !important;
 }
 }
 
@@ -48,8 +48,8 @@ p{
     min-height: calc(100vh - 150px);
     margin: 0 auto;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+   /* display: flex;
+   /* flex-direction: column;
    /* justify-content: space-around; */
     
 }
@@ -94,11 +94,14 @@ p{
 
 .text-block-b {
 	width: 100%;
-	font-size: 60px;
+	
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
+.text-block-b p {
+	font-size: 20px !important;
+}
 
 
 .social {
@@ -110,12 +113,13 @@ p{
 .social a{
 	font-size: 16px !important;
 	color: #5a6472;
-	line-height: 1.05em;
+	line-height: 1.55em;
 	
 }
 .social p{
 	font-size: 16px !important;
 	color: #5a6472 ;
+	line-height: 1.55em;
 }
 
 .button-presentation{
@@ -228,7 +232,7 @@ p{
 }
 
 .sposob-text{
-	font-size: 24px !important;
+	font-size: 20px !important;
     text-align: left;
 }
 
