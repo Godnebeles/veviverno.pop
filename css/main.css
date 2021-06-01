@@ -62,7 +62,7 @@ p{
 }
 
 .main-logo{
- 	position: absolute;
+ 	/*position: absolute;*/
     max-width: 100%;
     width: 160px;
     margin-bottom: 15px;
