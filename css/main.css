@@ -38,7 +38,7 @@ p{
 
 .section {
    width: calc(100vw - 30px);
-    min-height: calc(100vh - 180px);
+    min-height: calc(100vh - 110px);
     margin: 0 auto;
     overflow: hidden;
    /* display: flex;
