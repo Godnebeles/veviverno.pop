@@ -6,7 +6,10 @@ body{
 	background: linear-gradient(135deg, #0b0d0f 0%,#020303 100%);
 	color: white;
 	width: 100%;
+	/**/
 	
+
+	/**/
 	margin: 0;
 	padding: 0;
   	line-height: 1.55em;
@@ -128,9 +131,17 @@ p{
 .button{
 	
 }
-
+.main-stroke {
+	    margin-bottom: 45px;
+    margin-right: 200px;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 10%;
+}
 .stroke {
-	
+	margin-bottom: 15px;
     width: 80px;
     position: absolute;
     right: 0;
