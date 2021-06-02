@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ПМЭФ'21</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>ВедиВерно. ПМЭФ’21</title>
+	<link rel="shortcut icon" href="spiefvv/img/icon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="spiefvv/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div class="section">
 	
 		<div class="text-block">
-			<p>
-				
+			<p>				
 				Говорим и пишем по делу.<br>
 				Никаких рассылок.<br>
 				Только наша презентация.
-
 			</p>
 		</div>
 		<p class="sposob-text">Мы отправим файл на ваш Telegram или E-mail</p>
 		<div class="popup">
 					<div class="input-wrap">
-						<input type="text" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Name" data-name="Calc-Name" placeholder="Telegram @username" id="Calc-Name" required="">
-						<a href ="#" id="Calc-ResultButton" class="button red jumbo right w-button"></a>
+						<input type="text" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Name" data-name="Calc-Name" placeholder="Telegram имя пользователя" id="Calc-Name" required="">
+						<a href ="#" id="Name-ResultButton" class="button red jumbo right w-button"></a>
 					</div>
 					<div class="input-wrap">
 						<input type="tel" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Number" data-name="Calc-Number" placeholder="Telegram номер телефона" id="Calc-Number" required="">
-						<a href ="#" id="Calc-ResultButton" class="button red jumbo right w-button"></a>
+						<a href ="#" id="Number-ResultButton" class="button red jumbo right w-button"></a>
 					</div>
 					<div class="input-wrap">
 						<input type="email" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Email" data-name="Calc-Email" placeholder="E-mail" id="Calc-Email" required="">
-						<a href ="#" id="Calc-ResultButton" class="button red jumbo right w-button"></a>
+						<a href ="#" id="Email-ResultButton" class="button red jumbo right w-button"></a>
 					</div>
-
-		</div>	
-	
-		
-	
+		</div>		
 </div>
-<!--<hr class="delimiter">-->
 <div class="sticky">
 			<div class="nav">
 				<nav class="nav-in">
@@ -47,11 +41,66 @@
 				</nav>
 			</div>
 			 <div class="stroke">
-				<img src="img/stroke.png">
+				<img src="spiefvv/img/stroke.png">
 			</div> 
 			
 		</div>
+<script type="text/javascript" src="spiefvv/js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function () {
+    $("#Name-ResultButton").click(function () {
+                    var AnaliseName = $("#Calc-Name").val();
+                   
+	                    	$.post('sendspiefvv.php', {
+	                        "Calc-Name": AnaliseName,
+	                        'Calc-Number': '-',
+	                        "Calc-Email": '-',
+	                        'hmtl_employee': '-',
+	                        'hmtl_operation': '-',
+	                        'hmtl_tax': '-',                  
+	                        'hmtl_tarif': 'Презентация'
+	                    }).done(function (data) {
+	                        console.log("Data sended: " + data);
+	                        setTimeout(window.location.href = "presentation.html", 3000);       
+	                    });
+                	
+                });
 
-<script type="text/javascript" src="js/main.js"></script>
+                    
+    $("#Number-ResultButton").click(function () {
+                    var AnaliseNumber = $("#Calc-Number").val();
+
+                    $.post('sendspiefvv.php', {
+                        "Calc-Name": '-',
+                        'Calc-Number': AnaliseNumber,
+                        'Calc-Email': '-',
+                        'hmtl_employee': '-',
+                        'hmtl_operation': '-',
+                        'hmtl_tax': '-',                  
+                        'hmtl_tarif': 'Презентация'
+                    }).done(function (data) {
+                        console.log("Data sended: " + data);      
+                        setTimeout(window.location.href = "presentation.html", 3000);                      
+                    });
+                });
+    $("#Email-ResultButton").click(function () {           
+                    var AnaliseEmail = $("#Calc-Email").val();
+
+                    $.post('sendspiefvv.php', {
+                        "Calc-Name": '-',
+                        'Calc-Number': '-',
+                        'Calc-Email': AnaliseEmail,
+                        'hmtl_employee': '-',
+                        'hmtl_operation': '-',
+                        'hmtl_tax': '-',                  
+                        'hmtl_tarif': 'Презентация'
+                    }).done(function (data) {
+                        console.log("Data sended: " + data);
+                        setTimeout(window.location.href = "presentation.html", 3000);                       
+                    });
+                });
+});
+</script>
+<script type="text/javascript" src="spiefvv/js/main.js"></script>
 </body>
 </html>

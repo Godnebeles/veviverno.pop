@@ -3,12 +3,11 @@ html{
 	box-sizing: border-box;
 }
 body{
-	background: linear-gradient(135deg, #0b0d0f 0%,#020303 100%);
+	background: black;
 	color: white;
 	width: 100%;
 	/**/
 	
-
 	/**/
 	margin: 0;
 	padding: 0;
@@ -43,7 +42,7 @@ p{
    width: calc(100vw - 30px);
     min-height: calc(100vh - 125px);
     margin: 0 auto;
-    overflow: hidden;
+    overflow-x: hidden;
    /* display: flex;
    /* flex-direction: column;
    /* justify-content: space-around; */
@@ -351,9 +350,15 @@ nav {
 }
 
 .sticky {
+	width: 100%;
+	position: inherit;
+	bottom: 0;
+	left:0;
+	right: 0;
+	/*
 	display: flex;
     
     position: relative;
 
-    width: 100%;
+    width: 100%; */
 }
