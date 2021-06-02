@@ -356,6 +356,7 @@ nav a ::-webkit-any-link{
 	display: flex;
     
     position: sticky;
-
+    position: -webkit-sticky;
+    bottom: 0;
     width: 100%; 
 }
