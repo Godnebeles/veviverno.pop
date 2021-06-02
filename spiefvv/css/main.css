@@ -40,7 +40,7 @@ p{
 
 .section {
    width: calc(100vw - 30px);
-    min-height: calc(100vh - 125px);
+    min-height: 80vw;
     margin: 0 auto;
     overflow-x: hidden;
    /* display: flex;
@@ -341,8 +341,8 @@ nav a ::-webkit-any-link{
 	bottom: 20px;
     width: 50%;
     padding-left: 5vw;
-    /*
-	padding-bottom: 5vw;*/
+    
+	padding-bottom: 5vw;
 }
 
 .sticky {
