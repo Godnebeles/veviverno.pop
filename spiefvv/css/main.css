@@ -310,7 +310,7 @@ li {
  }
 
 nav a {
-   margin: 10px 0 0 0;
+   	margin: 10px 0 0 0;
     display: block;
     letter-spacing: 0.5px;
     color: #5a6472;
@@ -321,7 +321,7 @@ nav a {
     text-decoration: none;
     transition: 0.4s ease;
     background-color: transparent;
-    box-sizing: inherit;
+    box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-font-smoothing: antialiased;
 
@@ -334,31 +334,22 @@ nav a ::-webkit-any-link{
 .nav-in a:active{
 	color: rgba(255, 56, 89, 0.8);
 }
-nav {
-	
-	padding-right: 10px;
-	
-	
-}
+
 
 .nav {
 	
 	bottom: 20px;
     width: 50%;
     padding-left: 5vw;
-	padding-bottom: 5vw;
+    /*
+	padding-bottom: 5vw;*/
 }
 
 .sticky {
-	width: 100%;
-	position: inherit;
-	bottom: 0;
-	left:0;
-	right: 0;
-	/*
+	
 	display: flex;
     
     position: relative;
 
-    width: 100%; */
+    width: 100%; 
 }
