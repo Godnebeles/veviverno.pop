@@ -40,7 +40,7 @@ p{
 
 .section {
    width: calc(100vw - 30px);
-    min-height: 80vw;
+    min-height: 80vh;
     margin: 0 auto;
     overflow-x: hidden;
    /* display: flex;
