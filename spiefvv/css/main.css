@@ -355,8 +355,14 @@ nav a ::-webkit-any-link{
 	
 	display: flex;
     
-    position: relative;
-    position: -webkit-relative;
+    position: fixed;
+    
     bottom: 0;
     width: 100%; 
+}
+
+@media screen and (max-height: 520px){
+	.sticky{
+		position: relative;
+	}
 }
