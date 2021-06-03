@@ -40,9 +40,9 @@ p{
 
 .section {
    width: calc(100vw - 30px);
-    min-height: calc(100vh - 125px);
+    min-height: calc(100vh - 155px);
     margin: 0 auto;
-    overflow-x: hidden;
+    /*overflow-x: hidden;
    /* display: flex;
    /* flex-direction: column;
    /* justify-content: space-around; */
@@ -355,8 +355,8 @@ nav a ::-webkit-any-link{
 	
 	display: flex;
     
-    position: sticky;
-    position: -webkit-sticky;
+    position: relative;
+    position: -webkit-relative;
     bottom: 0;
     width: 100%; 
 }
