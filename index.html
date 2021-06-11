@@ -6,10 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="spiefvv/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="spiefvv/js/screen.js"></script>
+	<script type="text/javascript" src="spiefvv/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-<div class="section">
+<div id="main">
+	<div class="section">
 		<div class="text-block">
 			<p>				
 				Ваша персональная <br>
@@ -34,16 +35,14 @@
 		<div class="main-stroke">
 			<img src="spiefvv/img/stroke.png">
 		</div> 
-
-		
 	
 </div>
 
-<div class="sticky">
+<div class="sticky" >
 <div class="nav">
 		<nav class="nav-in">
-			<a href="contacts.html">Контакты</a> 
-			<a style="color: #bf2b18; " href="presentation.html">Презентация</a> 
+			<a id="contacts-main">Контакты</a> 
+			<a id="presentation-main" style="color: #bf2b18;">Презентация</a> 
 			<a target="_blank" href="https://vediverno.ru/policy.html">Политика <br> безопасности</a>
 		</nav>
 	</div>
@@ -51,6 +50,154 @@
 		<img src="spiefvv/logo/main_logo.png">
 	</div>
 </div>
+</div>
+<!--main end-->
+
+<div id="contacts" style="display: none;">
+	<div class="section" >		
+		<div class="text-block">
+			<p>
+
+				У нас нет колл-центра. <br>
+				Вам сразу ответит<br> 
+				наш сотрудник.	<br>
+					
+			</p>
+		</div>
+		<div class="text-block-b">
+			<p>
+				Офис находится в Москве. <br>
+				Мы работаем по всей России.	<br>
+			</p>
+		</div>
+		
+		<div class="number">
+			
+		</div>
+		<div class="social">
+			
+				<p>Телефон: <a style="color:#bf2b18;"  href="tel:+7 495 775 5811">+7 (495) 775-58-11</a></p>
+				<p>Телеграм: <a style="color:#bf2b18;" target="_blank" href="https://t.me/spiefvv">@SPIEFVV</a> <p>
+				<br>
+				<p>ИНН: 9706006402</p>
+				
+			
+		</div>
+	</div>
+	<div class="sticky">
+				<div class="nav">
+					<nav class="nav-in">
+						<a id="close-contacts">Закрыть</a> 
+						<a id="presentation-contacts" style="color: #bf2b18; " >Презентация</a> 
+						<a target="_blank" href="https://vediverno.ru/policy.html">Политика <br> безопасности</a>
+					</nav>
+				</div>
+				 <div class="stroke">
+					<img src="spiefvv/img/stroke.png">
+				</div> 
+				
+	</div>
+</div>
+
+<!--contacts end-->
+<div id="presentation" style="display: none;">
+	<div class="section">
+	
+		<div class="text-block">
+			<p>				
+				Говорим и пишем по делу.<br>
+				Никаких рассылок.<br>
+				Только наша презентация.
+			</p>
+		</div>
+		<p class="sposob-text">Мы отправим файл на ваш Telegram или E-mail</p>
+		<div class="popup">
+					<div class="input-wrap">
+						<input type="text" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Name" data-name="Calc-Name" placeholder="Telegram имя пользователя" id="Calc-Name" required="">
+						<a href ="#" id="Name-ResultButton" class="button red jumbo right w-button"></a>
+					</div>
+					<div class="input-wrap">
+						<input type="tel" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Number" data-name="Calc-Number" placeholder="Telegram номер телефона" id="Calc-Number" required="">
+						<a href ="#" id="Number-ResultButton" class="button red jumbo right w-button"></a>
+					</div>
+					<div class="input-wrap">
+						<input type="email" class="textfield dark w-input" autocomplete="off" maxlength="256" name="Calc-Email" data-name="Calc-Email" placeholder="E-mail" id="Calc-Email" required="">
+						<a href ="#" id="Email-ResultButton" class="button red jumbo right w-button"></a>
+					</div>
+		</div>		
+</div>
+<div class="sticky">
+			<div class="nav">
+				<nav class="nav-in">
+					<a id="close-presentation">Закрыть</a> 
+					<a id="contacts-presentation">Контакты</a> 
+					<a target="_blank" href="https://vediverno.ru/policy.html">Политика <br> безопасности</a>
+				</nav>
+			</div>
+			 <div class="stroke">
+				<img src="spiefvv/img/stroke.png">
+			</div> 
+			
+		</div>
+
+<script>
+	$(document).ready(function () {
+    $("#Name-ResultButton").click(function () {
+                    var AnaliseName = $("#Calc-Name").val();
+                   
+	                    	$.post('sendspiefvv.php', {
+	                        "Calc-Name": AnaliseName,
+	                        'Calc-Number': '-',
+	                        "Calc-Email": '-',
+	                        'hmtl_employee': '-',
+	                        'hmtl_operation': '-',
+	                        'hmtl_tax': '-',                  
+	                        'hmtl_tarif': 'Презентация'
+	                    }).done(function (data) {
+	                        console.log("Data sended: " + data);
+	                        setTimeout(window.location.href = "presentation.html", 3000);       
+	                    });
+                	
+                });
+
+                    
+    $("#Number-ResultButton").click(function () {
+                    var AnaliseNumber = $("#Calc-Number").val();
+
+                    $.post('sendspiefvv.php', {
+                        "Calc-Name": '-',
+                        'Calc-Number': AnaliseNumber,
+                        'Calc-Email': '-',
+                        'hmtl_employee': '-',
+                        'hmtl_operation': '-',
+                        'hmtl_tax': '-',                  
+                        'hmtl_tarif': 'Презентация'
+                    }).done(function (data) {
+                        console.log("Data sended: " + data);      
+                        setTimeout(window.location.href = "presentation.html", 3000);                      
+                    });
+                });
+    $("#Email-ResultButton").click(function () {           
+                    var AnaliseEmail = $("#Calc-Email").val();
+
+                    $.post('sendspiefvv.php', {
+                        "Calc-Name": '-',
+                        'Calc-Number': '-',
+                        'Calc-Email': AnaliseEmail,
+                        'hmtl_employee': '-',
+                        'hmtl_operation': '-',
+                        'hmtl_tax': '-',                  
+                        'hmtl_tarif': 'Презентация'
+                    }).done(function (data) {
+                        console.log("Data sended: " + data);
+                        setTimeout(window.location.href = "presentation.html", 3000);                       
+                    });
+                });
+});
+</script>
+</div>
+<!--presentation end-->
+<script type="text/javascript" src="spiefvv/js/windows.js"></script>
 <script type="text/javascript" src="spiefvv/js/main.js"></script>
 </body>
 </html>
